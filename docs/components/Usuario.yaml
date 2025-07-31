@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: integer
+    example: 1
+  nome:
+    type: string
+    example: Chico Cesar
+  email:
+    type: string
+    example: chico@cesar.com
+  nickname:
+    type: string
+    example: chico_cesar

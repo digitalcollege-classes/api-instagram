@@ -37,11 +37,10 @@ paths:
 components:
   schemas:
     Usuario:
-      type: object
-      properties:
-        id:
-          type: integer
-          example: 1
-        nome:
-          type: string
-          example: Chico Cesar
+      $ref: './components/Usuario.yaml'
+    Post:
+      $ref: './components/Post.yaml'
+    Comentario:
+      $ref: './components/Comentario.yaml'
+    Curtida:
+      $ref: './components/Curtida.yaml'

@@ -1,0 +1,8 @@
+type: object
+properties:
+  id:
+    type: integer
+    example: 1
+  conteudo:
+    type: string
+    example: Muito bom, recomendo

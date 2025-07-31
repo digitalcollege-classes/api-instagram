@@ -3,6 +3,23 @@ properties:
   id:
     type: integer
     example: 1
+  usuario_id:
+    type: integer
+    example: 123
+  foto:
+    type: string
+    example: "url_da_imagem.jpg"
   legenda:
     type: string
-    example: Carpe Diem
+    example: "Carpe Diem"
+  localizacao:
+    type: string
+    example: "Praia"
+  criado_em:
+    type: string
+    format: date-time
+    example: "2023-07-31T12:00:00Z"
+  atualizado_em:
+    type: string
+    format: date-time
+    example: "2023-07-31T12:30:00Z"

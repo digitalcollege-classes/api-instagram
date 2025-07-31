@@ -1,0 +1,15 @@
+get:
+  tags: [Usuarios]
+  description: Buscar um usuario
+  parameters:
+  - name: id
+    in: path
+    schema:
+      type: integer
+      example: 1
+    required: true
+    description: Id do usuario
+patch:
+  tags: [Usuarios]
+delete:
+  tags: [Usuarios]

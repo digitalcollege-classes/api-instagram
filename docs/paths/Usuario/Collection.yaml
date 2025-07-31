@@ -1,0 +1,40 @@
+get:
+  tags: [Usuarios]
+  summary: Todos os usuarios
+  description: Buscar todos os usuarios
+  responses:
+    200: 
+      description: Array de Usuarios
+      content:
+        "application/json": 
+          schema:
+            type: array
+            items:
+              allOf:
+                - $ref: '../../components/Usuario.yaml'
+    
+post:
+  tags: [Usuarios]
+  summary: Cadastra um usuario
+  requestBody:
+    content:
+      "application/json":
+        schema:
+          $ref: '../../components/Usuario.yaml'
+  responses:
+    201:
+      description: Cadastrado com sucesso
+      content:
+        "application/json":
+          schema:
+            $ref: '../../components/Usuario.yaml'
+    400:
+      description: Dados Invalidos
+      content:
+        "application/json":
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: "Mensagem do erro"

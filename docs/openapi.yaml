@@ -12,18 +12,10 @@ tags:
 
 paths:
   /api/usuarios:
-    get:
-      tags: [Usuarios]
-      description: Buscar todos os usuarios
-    post:
-      tags: [Usuarios]
+    $ref: './paths/Usuario/Collection.yaml'
   /api/usuarios/{id}:
-    get:
-      tags: [Usuarios]
-    patch:
-      tags: [Usuarios]
-    delete:
-      tags: [Usuarios]
+    $ref: './paths/Usuario/Item.yaml'
+    
 
   /api/postagens:
     get:

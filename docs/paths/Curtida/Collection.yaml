@@ -1,0 +1,8 @@
+get:
+  tags: [Postagens]
+  summary: Buscar todas as curtidas de uma postagem
+  response:
+
+post:
+  tags: [Postagens]
+  summary: Curtir uma postagem

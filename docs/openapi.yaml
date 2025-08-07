@@ -10,6 +10,7 @@ tags:
   - Comentarios
   - Curtidas
 
+
 paths:
   /api/usuarios:
     $ref: './paths/Usuario/Collection.yaml'
@@ -25,6 +26,11 @@ paths:
     get:
     patch:
     delete:
+
+  /api/postagens/{id}/curtidas:
+    $ref: './paths/Curtida/Collection.yaml'
+  /api/postagens/{post_id}/curtidas/{id}:
+    $ref: './paths/Curtida/Item.yaml'
 
 components:
   schemas:
